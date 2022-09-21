@@ -1,0 +1,8 @@
+firstname = input('Your First name: ')
+lastname = input('Your Last name: ')
+age = input('How old are you: ')
+country = input('Where do you live: ')
+print ('Your last name is: ' + lastname )
+print (' Your first name is: ' + firstname)
+print(' Your age is: ' + str(age))
+print(' You live in: ' + country)

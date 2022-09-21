@@ -1,0 +1,70 @@
+# 1
+def is_alive(health):
+    if health <= 0:
+        False
+    else:
+        True
+
+
+# 2
+
+birth = int(input('month of birthday: '))
+if birth >= 1 and birth <= 2 or birth == 12:
+    if birth == 1:
+        print('You born in January when White snow fell outside the window')
+    elif birth == 2:
+        print('You born in February when White snow fell outside the window')
+    else:
+        print('You born in December when White snow fell outside the window')
+elif birth >= 3 and birth <= 5:
+    if birth == 3:
+        print('You born in Mart when Birds sang beautiful songs')
+    elif birth == 4:
+        print('You born in April when Birds sang beautiful songs')
+    else:
+        print('You born in May when Birds sang beautiful songs')
+elif birth >= 6 and birth <= 8:
+    if birth == 6:
+        print('You born in June when The sun shone brighter than ever')
+    elif birth == 4:
+        print('You born in July when "The sun shone brighter than ever')
+    else:
+        print('You born in August when "The sun shone brighter than ever')
+else:
+    if birth == 9:
+        print('You born in September when "The harvest was incredible')
+    elif birth == 4:
+        print('You born in October when "The harvest was incredible')
+    else:
+        print('You born in November when "The harvest was incredible')
+
+# 3
+
+
+a = str(input("Create password that contain capital and small letter and symbol and digit: "))
+capitalalphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+smallalphabets = "abcdefghijklmnopqrstuvwxyz"
+specialchar = "$@_"
+digits = "0123456789"
+l = 0
+u = 0
+p = 0
+d = 0
+if (len(a) >= 8):
+    for i in a:
+        if (i in smallalphabets):
+            l += 1
+        if (i in capitalalphabets):
+            u += 1
+        if (i in digits):
+            d += 1
+        if (i in specialchar):
+            p += 1
+if (l >= 1 and u >= 1 and p >= 1 and d >= 1 and l + p + u + d == len(a)):
+    print(a)
+    print("Valid Password")
+else:
+    print(a)
+    print("Invalid Password")
+
+
